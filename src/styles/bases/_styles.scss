@@ -1,3 +1,4 @@
+@use '../abstracts/' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -5,4 +6,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+.layout {
+    height: 100vh;
+    margin-top: 40px;
+
+    @media screen and (max-width: 960px) {
+        margin-top: 20px;
+    }
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }

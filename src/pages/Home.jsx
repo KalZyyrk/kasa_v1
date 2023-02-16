@@ -1,6 +1,9 @@
+import Banner from "../components/Layout/Banner";
 
 export default function Home() {
     return (
-        <p>Working</p>
+        <div className="wrapper home">
+            <Banner imgSource="./IMGHome.png" title='Chez vous, partout et ailleurs' />
+        </div>
     );
 }
