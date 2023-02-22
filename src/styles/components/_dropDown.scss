@@ -1,0 +1,73 @@
+@use '../abstracts/' as *;
+
+.dropDown {
+    width: 100%;
+    margin: 12px auto;
+
+    &-header {
+        color: #fff;
+        background-color: $mainColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 18px;
+        border-radius: 8px;
+        font-size: 24px;
+
+        h3 {
+            font-weight: 500;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            font-weight: 500;
+
+            @media screen and (max-width:960px) {
+                width: 23px;
+                height: 14px;
+            }
+        }
+
+
+        .rotate {
+            transform: rotate(180deg);
+            transition: all .2s ease;
+        }
+    }
+
+    &-content {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+
+    &-contentDisplay {
+        font-size: 24px;
+        line-height: 36px;
+        background-color: #f6f6f6;
+        color: $mainColor;
+        border-radius: 8px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        visibility: visible;
+        height: 80%;
+        padding: 20px 27px 30px 27px;
+        top: -35px;
+        z-index: -1;
+
+        @media screen and (max-width: 960px) {
+            line-height: 17px;
+            font-size: 12px;
+        }
+
+        p {
+            margin: 17px 0px;
+
+            @media screen and (max-width:960px) {
+                margin: 17px 0px;
+            }
+        }
+    }
+}

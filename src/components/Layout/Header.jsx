@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import logo from '../../assets/logo.svg'
 
 export default function Header() {
     return (
         <header className="wrapper">
             <NavLink to='/' className="logo">
-                <img src="./logo.svg" alt='logo de Kasa' />
+                <img src={logo} alt='logo de Kasa' />
             </NavLink>
             <nav>
                 <ul>

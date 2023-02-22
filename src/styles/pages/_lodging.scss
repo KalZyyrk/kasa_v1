@@ -1,0 +1,173 @@
+@use '../abstracts/' as *;
+
+.lodging {
+    margin-top: 25px;
+
+    @media screen and (max-width:960px) {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+.slideContainer {
+    width: 100%;
+    height: 415px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 960px) {
+        max-height: 255px;
+        height: 255px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.lodgingHeader {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $mainColor;
+    font-weight: 500%;
+    font-size: 18px;
+
+    @media screen and (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        gap: 16px;
+        font-size: 14px;
+    }
+}
+
+.lodgingInfo {
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+
+        @media screen and (max-width: 960px) {
+            font-size: 18px;
+        }
+    }
+
+    .tag {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        margin-top: 20px;
+
+        @media screen and (max-width:960px) {
+            flex-wrap: wrap;
+            margin-bottom: 17px;
+        }
+
+        li {
+            color: #fff;
+            font-size: 18px;
+            background-color: $mainColor;
+            border-radius: 10px;
+            padding: 3px 40px;
+            white-space: nowrap;
+
+            @media screen and (max-width:960px) {
+                font-size: 10px;
+                padding: 2px 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.ownerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: flex-end;
+
+    @media screen and (max-width:960px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.nameAvatar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+    @media screen and (max-width: 960px) {
+        font-size: 12px;
+    }
+
+}
+
+.nameOwner {
+    height: 52px;
+    width: 93px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+
+    @media screen and (max-width:960px) {
+        height: 33px;
+        width: 53px;
+        line-height: 17px;
+    }
+}
+
+.avatarOwner {
+    width: 60px;
+    height: 60px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 64px;
+        height: 64px;
+
+        @media screen and (max-width:960px) {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    @media screen and (max-width:960px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.stars {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 30px;
+
+    @media screen and (max-width:960px) {
+        height: 15px;
+        align-self: center;
+    }
+}
+
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 34px 0;
+
+    @media screen and (max-width: 960px) {
+        margin-top: 16px;
+        flex-direction: column;
+        gap: 0px;
+    }
+}

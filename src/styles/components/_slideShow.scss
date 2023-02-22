@@ -1,0 +1,61 @@
+@use '../abstracts/' as *;
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .image-container {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.slideStyle {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.slide-left,
+.slide-right {
+    height: 79px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+        color: $mainColor;
+    }
+
+    @media screen and (max-width:960px) {
+        height: 20px;
+        width: auto;
+    }
+}
+
+.slide-right {
+    right: 23px;
+}
+
+.slide-left {
+    left: 23px;
+}
+
+.position {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #fff;
+
+    @media screen and (max-width:960px) {
+        visibility: hidden;
+    }
+}

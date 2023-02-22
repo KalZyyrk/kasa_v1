@@ -25,6 +25,10 @@ header {
                     color: $mainColor;
                     font-size: 24px;
                     padding-left: 33px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

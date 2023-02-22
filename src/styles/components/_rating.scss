@@ -1,0 +1,10 @@
+.star {
+    height: 30px;
+    align-self: flex-end;
+}
+
+@media screen and (max-width : 960px) {
+    .star {
+        height: 15px;
+    }
+}
