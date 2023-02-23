@@ -30,9 +30,9 @@
         align-items: center;
         position: relative;
         overflow: hidden;
-        filter: brightness(75%);
-        -webkit-filter: brightness(75%);
-        -moz-filter: brightness(75%);
+        // filter: brightness(75%);
+        // -webkit-filter: brightness(75%);
+        // -moz-filter: brightness(75%);
 
         @media screen and (max-width:960px) {
             width: 100%;
@@ -55,7 +55,7 @@
 
             &>h3 {
                 color: #fff;
-                text-shadow: 2px 1px #000;
+                // text-shadow: 2px 1px #000;
             }
         }
 
@@ -75,7 +75,6 @@
             color: #FFF;
             text-shadow: 2px 1px #000;
             z-index: 3;
-            filter: brightness(100%);
         }
     }
 }

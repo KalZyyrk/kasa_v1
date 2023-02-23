@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import bannerImg from '../assets/IMGHome.png'
+import bannerImg from '../assets/IMGAbout.jpg'
 import DropDown from '../components/DropDown';
 import aboutData from '../data/aboutData'
 
