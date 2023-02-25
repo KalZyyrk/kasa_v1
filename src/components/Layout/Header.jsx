@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 
 export default function Header() {
@@ -11,10 +11,10 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <Link to='/home'>Accueil</Link>
+                        <NavLink to='/home'>Accueil</NavLink>
                     </li>
                     <li>
-                        <Link to='/about'>A Propos</Link>
+                        <NavLink to='/about'>A Propos</NavLink>
                     </li>
                 </ul>
             </nav>
